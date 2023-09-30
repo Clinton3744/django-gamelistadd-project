@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/gamelistapp/style.css">
+</head>
+<body>
+    {% extends 'gamelistapp/base.html'%}
+    {% block content %}
+
+    <h1 class="index-h1">Games List</h1>
+
+    <table>
+        <thead>
+            <th>Games</th>
+            <th>Size(GB)</th>
+            <th>Geners</th>
+            <th>Style</th>
+            <th>Platform</th>
+        </thead>
+
+        <tbody>
+            {% for i in games%}
+            <tr>
+                <td>{{i.gname}}</td>
+                <td>{{i.gsize}}</td>
+                <td>{{i.gtype}}</td>
+                <td>{{i.gstyle}}</td>
+                <td>{{i.gos}}</td>
+                <td><a href="/gamelistapp/update/{{i.id}}">Update</a></td>
+                <td><a href="/gamelistapp/delete/{{i.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+    
+    <div class="box">
+    <a href="/gamelistapp/add"><button>Add More Games</button></a>
+    </div>
+
+    {% endblock %}
+    
+</body>
+</html>

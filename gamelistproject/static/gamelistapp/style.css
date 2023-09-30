@@ -1,0 +1,73 @@
+body{
+    background-image: url(back3.jpg);
+    background-size: 1920px 950px;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 10vw;
+    background-color: olivedrab;
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.box{
+
+    margin-left: 1vw;
+    margin-top: 3vh;
+}
+
+.box a button{
+    padding: 10px;
+    color:white ;
+    background-color: blueviolet;
+    position: relative;
+    left: 9vw;
+}
+
+form{
+    border: 1px solid white;
+    width: 30vw;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    left: 15vw;
+    background-color: teal;
+    
+}
+
+
+form p input{
+    margin: 10px;
+}
+
+.index-h1{
+    position: relative;
+    left: 20vw;
+    color: white;
+}
+
+.add-h1{
+    position: relative;
+    left: 24vw;
+    color: white;
+}
+
+form input{
+    padding: 5px;
+}
+
+form label{
+    color: white;
+}
